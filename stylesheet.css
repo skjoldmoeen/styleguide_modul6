@@ -13,6 +13,41 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.grey{
+  display: flex;
+  color: #FFF;
+  height: 200px;
+  width: 200px;
+  background-color: #313331;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightgrey{
+  display: flex;
+  color: #FFF;
+  height: 200px;
+  width: 200px;
+  border-color: black;
+  background-color: #444441;
+  align-items: center;
+  justify-content: center;
+}
+
+.white{
+  display: flex;
+  color: black;
+  height: 200px;
+  width: 195px;
+  border-color: black;
+  border-style:solid;
+  background-color: #FFF;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .icon-wrapper{
   display: flex;
   flex-direction: row;
@@ -21,5 +56,94 @@ body {
   display: flex;
   width: 50px;
   height: 50px;
-  margin-right: 30px;
+  margin-right: 10px;
+  margin-top: 10px
+}
+.gridcontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-areas:
+  'icon1 icon2 icon3 icon4 icon5'
+  'icon6 icon7 icon8 icon9 icon10'
+  'icon11 icon12 icon13 icon14 icon15'
+  'icon16 icon17 icon18 icon19 icon20'
+  'icon21'
+}
+.support_wrapper{
+    display: flex;
+    padding-bottom: 50px;
+  }
+
+.support_left{
+    width: 50%;
+    height: 80vh;
+  }
+  .support_right{
+    width: 50%;
+    height: 80vh;
+  }
+.kodeboks_support{
+    margin-left: 10%;
+    font-family: "Roboto Mono", monospace;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    margin-bottom: 10%;
+    padding: 20px 20px;
+}
+.wrapper {
+  grid-area: accordion;
+  position: relative;
+}
+
+.wrapper h2 {
+  font-family: roboto-condensed, sans-serif;
+  color: #5cb71d;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+  border: solid #515f6d 2px;
+  padding: 15px 0 15px 15px;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 100%;
+  font-family: roboto-condensed, sans-serif;
+}
+
+.wrapper textarea {
+  border: solid #515f6d 2px;
+  padding: 15px 0 15px 15px;
+  margin-top: 10px;
+  font-size: 14px;
+  height: 150px;
+  width: 100%;
+  font-family: roboto-condensed, sans-serif;
+}
+
+.wrapper #error_message {
+  margin-bottom: 20px;
+  padding: 0px;
+  background: #d36d75;
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+  font-family: roboto-condensed, sans-serif;
+}
+
+.wrapper .btn input[type="submit"] {
+  border: 0;
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: #5cb71d;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: roboto-condensed, sans-serif;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.kipgryde_billede img{
+  width: 50vw;
+
 }
