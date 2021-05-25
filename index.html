@@ -16,7 +16,8 @@
 
   </header>
     <h1>Styleguide til NORQi</h1>
-  <h2>Farvekoder</h2>
+    <br><br>
+  <h2>Farver</h2>
   <div class="colors">
   <div class="green">
     <p>#5CB71D</p>
@@ -31,6 +32,7 @@
   <p>#FFF</p>
 </div>
 </div>
+<br><br><br>
 
 <h2>Typografi</h2>
 
@@ -50,7 +52,7 @@
   </div>
 
   <div class="kodeboks">
-    <h3>CSS</h3>
+    <h3>CSS:</h3>
     body {
       <br>font-family: roboto-condensed, sans-serif;
       <br>font-weight: 400;
@@ -97,14 +99,13 @@
   </div>
 </div>
 
+<h2>Ikoner</h2>
 
 <div class="section">
 
 
-
 <div class="indhold">
 
-<h2>Ikoner</h2>
 <div class="icon_section">
 
 
@@ -189,12 +190,12 @@
 </div>
 
 <div class="kodeboks">
-  <h3>HTML</h3>
+  <h3>HTML:</h3>
   &lt;div class="icon"&gt;
   <br>&lt;img src="img/icons/varmestyring.svg" alt=""&gt;
   <br>&lt;/div&gt;
 <br><br>
-  <h3>CSS</h3>
+  <h3>CSS:</h3>
   .icon {
     <br>justify-content: center;
     <br>height: 50px;
@@ -202,10 +203,10 @@
     <br>display: flex;}
     <br><br>
 
-<h3>HTML</h3>
+<h3>HTML:</h3>
   &lt;a href="#section0" class="navbar_link arrow"></a>
 <br><br>
-<h3>CSS</h3>
+<h3>CSS:</h3>
 .arrow {
   <br>border: solid #707070;
   <br>border-width: 0 2px 2px 0;
@@ -250,7 +251,7 @@
 
 
             <div class="kodeboks">
-              <h3>HTML</h3>
+              <h3>HTML:</h3>
                   &lt;div class="support_right"&gt;
                   <br>&lt;div class="wrapper"&gt;
                   <br>  &lt;h3>Kontakt os&lt/h3&gt;
@@ -275,7 +276,7 @@
               <br>  &lt;/div&gt;
               </br><br>
 
-              <h3>CSS</h3>
+              <h3>CSS:</h3>
               .wrapper {
                 <br>grid-area: accordion;
                 <br>position: relative;
@@ -327,7 +328,7 @@
             <br>    margin-left: 25%;}
             <br><br>
 
-            <h3>JS</h3>
+            <h3>JavaScript:</h3>
             function validation (){
               <br> var name = document.getElementById("name").value;
               <br> var number = document.getElementById("number").value;
@@ -369,7 +370,7 @@
 
         </div>
         <h2>Layout</h2>
-        <h3>Vi har taget udgangspunkt i en iPhone X størrelse. Derfor er dimensionerne for skærmen 375px * 812px</h3>
+        <h3>Vi har taget udgangspunkt i en iPhone X-størrelse. <br>Derfor er dimensionerne for skærmen 375px*812px.</h3>
     <div class="section">
       <div class="indhold">
         <img src="img/layout.png" style="border: solid 1px #000;" alt="">
@@ -403,11 +404,39 @@
           <div class="panel">
               <p>Indhold</p>
           </div>
+          <button class="accordion">
+            Menupunkt
+            <div class="arrow"></div>
+          </button>
+          <div class="panel">
+            <p>Indhold</p>
+          </div>
+          <button class="accordion">
+            Menupunkt
+            <div class="arrow"></div>
+          </button>
+          <div class="panel">
+            <p>Indhold</p>
+          </div>
+          <button class="accordion">
+            Menupunkt
+            <div class="arrow"></div>
+          </button>
+          <div class="panel">
+            <p>Indhold</p>
+          </div>
+          <button class="accordion">
+            Menupunkt
+            <div class="arrow"></div>
+          </button>
+          <div class="panel">
+            <p>Indhold</p>
+          </div>
       </div>
     </div>
 
       <div class="kodeboks">
-            <h3>HTML</h3>
+            <h3>HTML:</h3>
                   &lt;div class="accordion_container"&gt;
             <br>  &lt;button class="accordion"&gt;
             <br>  Menupunkt
@@ -434,7 +463,7 @@
             <br><br>
 
 
-            <h3>CSS</h3>
+            <h3>CSS:</h3>
             .accordion_container {
             <br>  grid-area: accordion;
             <br>  background-color: green;
@@ -483,7 +512,7 @@
             <br>}
             <br><br>
 
-            <h3>JavaScript</h3>
+            <h3>JavaScript:</h3>
 
                 let acc = document.getElementsByClassName("accordion");
             <br>let i;
@@ -540,7 +569,7 @@
     </div>
 
     <div class="kodeboks">
-      <h3>HTML</h3>
+      <h3>HTML:</h3>
 
       &lt;div class="header"&gt;
         <br>  &lt;img src="img/NORQI-Logo.svg" alt=""&gt;
@@ -570,7 +599,7 @@
         <br>
         <br>  &lt;/div>
 
-      <h3>CSS</h3>
+      <h3>CSS:</h3>
 
       .header {
     <br>    background-color: #313331;
@@ -714,7 +743,7 @@
     <br>  }
     <br>
 
-      <h3>JavaScript</h3>
+      <h3>JavaScript:</h3>
 
           const menu_btn = document.querySelector('.hamburger');
     <br>  const mobile_menu = document.querySelector('nav');
