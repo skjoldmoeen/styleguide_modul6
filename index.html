@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://use.typekit.net/jfr8ipk.css">
+    <script src="accordion.js" defer></script>
+    <script src="pernille.js" defer></script>
+    <script src="patrick.js" defer></script>
     <title>Styleguide</title>
 </head>
 <body>
@@ -28,13 +31,80 @@
   <p>#FFF</p>
 </div>
 </div>
+
+<div class="section">
+  <div class="indhold">
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <p>Paragraph</p>
+    <a href="#">Anchor</a>
+    <div class="menu_a">
+      <a href="#">Anchor</a>
+    </div>
 
 
+  </div>
+  <div class="kodeboks">
+    <h3>CSS</h3>
+    body {
+      <br>font-family: roboto-condensed, sans-serif;
+      <br>font-weight: 400;
+      <br>font-style: normal;
+      <br>color: #444441;
+      <br><br>
+      h1 {
+        <br>font-size: 30px;}
+        <br><br>
+      h2 {
+        <br>font-size: 28px;}
+        <br><br>
+      h3 {
+          <br>color: #707070;
+          <br>font-size: 18px;}
+      <br><br>
+      h4{
+          <br>font-weight: 400;
+          <br>font-size: 20px;
+          <br>color: #707070}
+          <br><br>
+      p{
+          <br>font-size: 16px;
+          <br>font-weight: 300;}
+          <br><br>
+
+      a {
+          <br>cursor: pointer;
+          <br>text-decoration: none;
+          <br>list-style: none;
+          <br>color: #fff;
+          <br>font-size: 20px;
+          <br>font-weight: 600;
+          <br>font-style: normal;}
+          <br><br>
+
+          a{
+            <br>cursor: pointer;
+            <br>text-decoration: none;
+            <br>color: #707070;
+            <br>font-size: 21px;
+            <br>font-weight: 300;}
+            <br><br>
+  </div>
+</div>
+
+
+<div class="section">
+
+
+
+<div class="indhold">
 
 <h2>Ikoner</h2>
+<div class="icon_section">
+
+
 <div class="icon-wrapper gridcontainer">
     <div class="icon icon1">
       <img src="img/varmestyring.svg" alt="">
@@ -99,12 +169,59 @@
     <div class="icon icon21">
     <img src="img/vandstyring.svg" alt="">
     </div>
+    <div class="icon icon22">
+      <div class="arrow-down">
+      </div>
+    </div>
+    <div class="icon icon22">
+      <div class="arrow-up">
+      </div>
+    </div>
+    <div class="icon icon22">
+      <div class="arrow-right">
+      </div>
+    </div>
   </div>
+</div>
+</div>
 
-  <h2>formular</h2>
-  <div class="formulargrid">
-    <div class="support_wrapper">
-            <div class="support_right">
+<div class="kodeboks">
+  <h3>HTML</h3>
+  &lt;div class="icon"&gt;
+  <br>&lt;img src="img/icons/varmestyring.svg" alt=""&gt;
+  <br>&lt;/div&gt;
+
+  <h3>CSS</h3>
+  .icon {
+    <br>justify-content: center;
+    <br>height: 50px;
+    <br>width: 50px;
+    <br>display: flex;}
+    <br><br>
+
+<h3>HTML</h3>
+  &lt;a href="#section0" class="navbar_link arrow"></a>
+
+<h3>CSS</h3>
+.arrow {
+  <br>border: solid #707070;
+  <br>border-width: 0 2px 2px 0;
+  <br>display: inline-block;
+  <br>padding: 5px;
+  <br>transform: rotate(45deg);}
+<br><br>
+
+
+</div>
+</div>
+
+
+  <h2>Formular</h2>
+          <div class="section">
+            <div class="indhold">
+
+
+
               <div class="wrapper">
                 <h3>Kontakt os</h3>
                 <div id="error_message"></div>
@@ -125,47 +242,307 @@
                 <input type="submit">
               </div>
             </div>
-            </div>
-            <div class="support_left">
-            <div class="kodeboks_support">
-              <b>HTML</b>
-              <br>
-               <div class="support_right">
-                  <div class="wrapper">
-                    <h3>Kontakt os</h3>
-                    <div id="error_message"></div>
-                    <form id="myform" onsubmit="return validation()">
-                      <div class="input_field">
-                        <input type="text" placeholder="Navn" id="name">
-                      </div>
-                      <div class="input_field">
-                        <input type="text" placeholder="Telefonnummer" id="number">
-                      </div>
-                      <div class="input_field">
-                        <input type="text" placeholder="E-mail" id="email">
-                      </div>
-                      <div class="input_field">
-                        <textarea id="message" placeholder="Besked"></textarea>
-                      </div>
-                    <div class="btn">
-                    <input type="submit">
-                  </div>
-                </div>
-                </div>
-              </br>
+    </div>
 
-            </div>
+
+
+            <div class="kodeboks">
+              <h3>HTML</h3>
+               <br>
+               <br>&lt;div class="support_right"&gt;
+                  <br>&lt;div class="wrapper"&gt;
+                  <br>  &lt;h3>Kontakt os&lt/h3&gt;
+                  <br>  &lt;div id="error_message">&lt;/div&gt;
+                    <br>&lt;form id="myform" onsubmit="return validation()"&gt;
+                    <br>  &lt;div class="input_field"&gt;
+                      <br>  &lt;input type="text" placeholder="Navn" id="name"&gt;
+                    <br>  &lt;/div&gt;
+                    <br>  &lt;div class="input_field"&gt;
+                      <br>  &lt;input type="text" placeholder="Telefonnummer" id="number"&gt;
+                    <br>  &lt;/div&gt;
+                    <br>  &lt;div class="input_field"&gt;
+                      <br>  &lt;input type="text" placeholder="E-mail" id="email"&gt;
+                  <br>    &lt;/div&gt;
+                    <br>  &lt;div class="input_field"&gt;
+                      <br>  &lt;textarea id="message" placeholder="Besked">&lt;/textarea&gt;
+                    <br>  &lt;/div&gt;
+                  <br>  &lt;div class="btn"&gt;
+                    <br>&lt;input type="submit"&gt;
+                <br>  &lt;/div&gt;
+              <br>  &lt;/div&gt;
+              <br>  &lt;/div&gt;
+              </br>
+              <h3>CSS</h3>
+              .wrapper {
+                <br>grid-area: accordion;
+                <br>position: relative;
+                <br>width: 97%;}
+              <br><br>
+              <br>.wrapper h2 {
+                <br>font-family: roboto-condensed, sans-serif;
+                <br>color: #5cb71d;}
+              <br><br>
+              <br>.wrapper .input_field input[type="text"],
+              <br>.wrapper textarea {
+              <br>  border: solid #515f6d 2px;
+              <br>  padding: 15px 0 15px 15px;
+              <br>  margin-top: 10px;
+              <br>  font-size: 14px;
+              <br>  width: 100%;
+              <br>  font-family: roboto-condensed, sans-serif;}
+              <br><br>
+            <br>  .wrapper textarea {
+            <br>    border: solid #515f6d 2px;
+            <br>    padding: 15px 0 15px 15px;
+            <br>    margin-top: 10px;
+              <br>  font-size: 14px;
+            <br>    height: 150px;
+            <br>    width: 100%;
+            <br>    font-family: roboto-condensed, sans-serif;}
+            <br>  <br>
+            <br>  .wrapper #error_message {
+            <br>    margin-bottom: 20px;
+            <br>    padding: 0px;
+              <br>  background: #d36d75;
+            <br>    color: black;
+            <br>    text-align: center;
+            <br>    font-size: 14px;
+            <br>    transition: all 0.5s ease;
+              <br>  font-family: roboto-condensed, sans-serif;}
+            <br><br>
+            <br>  .wrapper .btn input[type="submit"] {
+            <br>    border: 0;
+            <br>    margin-top: 15px;
+            <br>    padding: 10px;
+            <br>    width: 50%;
+            <br>    background-color: #5cb71d;
+            <br>    font-weight: bold;
+            <br>    cursor: pointer;
+            <br>    font-family: roboto-condensed, sans-serif;
+            <br>    color: #fff;
+            <br>    margin-bottom: 50px;
+            <br>    margin-left: 25%;}
+            <h3>JS</h3>
+            function validation (){
+              <br> var name = document.getElementById("name").value;
+              <br> var number = document.getElementById("number").value;
+              <br> var email = document.getElementById("email").value;
+              <br> var message = document.getElementById("message").value;
+              <br> var error_message = document.getElementById("error_message");
+              <br> var text;
+<br> <br>
+              <br> error_message.style.padding = "10px";
+<br> <br>
+              <br> if(name.length <2){
+              <br>   text = "Indsæt navn";
+              <br>   error_message.innerHTML = text;
+              <br>   return false;
+            <br>   }
+<br> <br>
+              <br> if(number.length <5){
+                <br> text = "Indsæt telefonnummer";
+              <br>   error_message.innerHTML = text;
+              <br>   return false;
+            <br>   }
+
+              <br> if(email.indexOf("@") == -1 || email.length <5){
+                <br> text = "Indsæt e-mail";
+                <br> error_message.innerHTML = text;
+              <br>   return false;
+            <br>   }
+<br> <br>
+              <br> if(message.length <=50){
+              <br>   text = "Indsæt besked på mindst 50 tegn";
+              <br> <br>   error_message.innerHTML = text;
+              <br>   return false;
+            <br>   }
+<br> <br>
+              <br> alert("Tak for din besked - vi vender tilbage hurtigst muligt!")
+              <br> return true;
+              <br> }
             </div>
 
         </div>
+        <h2>Layout</h2>
+        <h3>Vi har taget udgangspunkt i en iPhone X størrelse. Derfor er dimensionerne for skærmen 375px * 812px</h3>
+    <div class="section">
+      <div class="indhold">
+        <img src="img/layout.png" style="border: solid 1px #000;" alt="">
+        <img src="img/layout2.png" style="border: solid 1px #000;" alt="">
+      </div>
+    </div>
+    <h2>accordion</h2>
+    <div class="section">
+      <div class="indhold">
+        <div class="accordion_container">
+          <button class="accordion">
+            Menupunkt
+            <div class="arrow"></div>
+          </button>
+          <div class="panel">
+            <p>Indhold</p>
+          </div>
+          <button class="accordion">
+            Menupunkt
+            <div class="arrow"></div>
+          </button>
+          <div class="panel">
+              <p>Indhold</p>
+          </div>
+          <button class="accordion">
+            Menupunkt
+            <div class="arrow"></div>
+          </button>
+          <div class="panel">
+              <p>Indhold</p>
+          </div>
+      </div>
+    </div>
 
-  </div>
+      <div class="kodeboks">
+        <h3>HTML</h3>
+        <div class="accordion_container">
+          <button class="accordion">
+            Menupunkt
+            <div class="arrow"></div>
+          </button>
+          <div class="panel">
+            <p>Indhold</p>
+          </div>
+          <button class="accordion">
+            Menupunkt
+            <div class="arrow"></div>
+          </button>
+          <div class="panel">
+              <p>Indhold</p>
+          </div>
+          <button class="accordion">
+            Menupunkt
+            <div class="arrow"></div>
+          </button>
+          <div class="panel">
+            <p>Indhold</p>
+          </div>
+        </div>
 
-<h2>billeder</h2>
+
+            <h3>CSS</h3>
+            .accordion_container {
+              grid-area: accordion;
+              background-color: green;
+              width: 45%;
+            }
+            .accordion {
+              background-color: #5cb71d;
+              color: #fff;
+              cursor: pointer;
+              padding: 26px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 18px;
+              transition: 0.4s;
+              font-family: roboto-condensed, sans-serif;
+              font-weight: 400;
+              font-style: normal;
+              border-bottom: 1px solid #fff;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+            }
+
+            .active,
+            .accordion:hover {
+              background-color: #5cb71d;
+            }
+
+            .panel {
+              padding: 0 18px;
+              background-color: white;
+              max-height: 0;
+              overflow: hidden;
+              height: 100%;
+              transition: max-height 0.2s ease-out;
+            }
+            .arrow {
+              border: solid #fff;
+              border-width: 0 2px 2px 0;
+              display: inline-block;
+              padding: 5px;
+              transform: rotate(45deg);
+            }
+
+
+            <h3>JS</h3>
+
+
+            let acc = document.getElementsByClassName("accordion");
+            let i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                let panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+              });
+
+            }
+
+
+    </div>
+      </div>
+
+<h2>Hamburger menu</h2>
+<div class="section">
+    <div class="indhold">
+
+
+      <div class="header">
+        <img src="img/NORQI-Logo.svg" alt="">
+          <nav>
+            <div class="sprog">
+              <a href="#">Dansk</a>
+              <a href="#">English</a>
+
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">Produkter
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="#">Kipgryder</a>
+                <a href="#">Kipstegere</a>
+                <a href="#">Kogeborde</a>
+              </div>
+              <a href="#">God viden</a>
+              <a href="#">Om NORQi</a>
+              <a href="#">Kontakt</a>
+            </div>
+            </nav>
+            <button class="hamburger">
+              <div class="bar"></div>
+            </button>
+
+          </div>
+    </div>
+    <div class="kodeboks">
+
+    </div>
+</div>
+
+<h2>Billeder</h2>
+<h3>Kipgryde</h3>
 <div class="kipgryde_billede">
 <img src="img/kipgryde.jpg" alt="">
 </div>
-
+<h3>Footer</h3>
+<img class="footer" src="img/footer-bg-repeat.jpg" alt="">
 
 </body>
 </html>
