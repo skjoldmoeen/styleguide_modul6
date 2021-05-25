@@ -4,6 +4,10 @@ body {
   font-style: normal;
 }
 
+.colors{
+  display: inline-flex;
+}
+
 .green {
   display: flex;
   color: #FFF;
@@ -38,7 +42,7 @@ body {
 .white{
   display: flex;
   color: black;
-  height: 200px;
+  height: 195px;
   width: 195px;
   border-color: black;
   border-style:solid;
@@ -67,7 +71,7 @@ body {
   'icon6 icon7 icon8 icon9 icon10'
   'icon11 icon12 icon13 icon14 icon15'
   'icon16 icon17 icon18 icon19 icon20'
-  'icon21'
+  'icon21 icon22'
 }
 .support_wrapper{
     display: flex;
