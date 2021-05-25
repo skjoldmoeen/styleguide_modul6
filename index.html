@@ -32,6 +32,8 @@
 </div>
 </div>
 
+<h2>Typografi</h2>
+
 <div class="section">
   <div class="indhold">
     <h1>Heading 1</h1>
@@ -46,6 +48,7 @@
 
 
   </div>
+
   <div class="kodeboks">
     <h3>CSS</h3>
     body {
@@ -190,7 +193,7 @@
   &lt;div class="icon"&gt;
   <br>&lt;img src="img/icons/varmestyring.svg" alt=""&gt;
   <br>&lt;/div&gt;
-
+<br><br>
   <h3>CSS</h3>
   .icon {
     <br>justify-content: center;
@@ -201,7 +204,7 @@
 
 <h3>HTML</h3>
   &lt;a href="#section0" class="navbar_link arrow"></a>
-
+<br><br>
 <h3>CSS</h3>
 .arrow {
   <br>border: solid #707070;
@@ -214,7 +217,7 @@
 
 </div>
 </div>
-
+<br>
 
   <h2>Formular</h2>
           <div class="section">
@@ -248,8 +251,7 @@
 
             <div class="kodeboks">
               <h3>HTML</h3>
-               <br>
-               <br>&lt;div class="support_right"&gt;
+                  &lt;div class="support_right"&gt;
                   <br>&lt;div class="wrapper"&gt;
                   <br>  &lt;h3>Kontakt os&lt/h3&gt;
                   <br>  &lt;div id="error_message">&lt;/div&gt;
@@ -271,7 +273,8 @@
                 <br>  &lt;/div&gt;
               <br>  &lt;/div&gt;
               <br>  &lt;/div&gt;
-              </br>
+              </br><br>
+
               <h3>CSS</h3>
               .wrapper {
                 <br>grid-area: accordion;
@@ -322,6 +325,8 @@
             <br>    color: #fff;
             <br>    margin-bottom: 50px;
             <br>    margin-left: 25%;}
+            <br><br>
+
             <h3>JS</h3>
             function validation (){
               <br> var name = document.getElementById("name").value;
@@ -371,7 +376,9 @@
         <img src="img/layout2.png" style="border: solid 1px #000;" alt="">
       </div>
     </div>
-    <h2>accordion</h2>
+
+    <h2>Menuer</h2>
+    <h3>Accordion-menu</h3>
     <div class="section">
       <div class="indhold">
         <div class="accordion_container">
@@ -400,105 +407,105 @@
     </div>
 
       <div class="kodeboks">
-        <h3>HTML</h3>
-        <div class="accordion_container">
-          <button class="accordion">
-            Menupunkt
-            <div class="arrow"></div>
-          </button>
-          <div class="panel">
-            <p>Indhold</p>
-          </div>
-          <button class="accordion">
-            Menupunkt
-            <div class="arrow"></div>
-          </button>
-          <div class="panel">
-              <p>Indhold</p>
-          </div>
-          <button class="accordion">
-            Menupunkt
-            <div class="arrow"></div>
-          </button>
-          <div class="panel">
-            <p>Indhold</p>
-          </div>
-        </div>
+            <h3>HTML</h3>
+                  &lt;div class="accordion_container"&gt;
+            <br>  &lt;button class="accordion"&gt;
+            <br>  Menupunkt
+            <br>  &lt;div class="arrow"&gt;&lt;/div&gt;
+            <br>  &lt;/button&gt;
+            <br>  &lt;div class="panel"&gt;
+            <br>  &lt;p&gt;Indhold&lt;/p&gt;
+            <br>  &lt;/div&gt;
+            <br>  &lt;button class="accordion"&gt;
+            <br>  Menupunkt
+            <br>  &lt;div class="arrow"&gt;&lt;/div&gt;
+            <br>  &lt;/button&gt;
+            <br>  &lt;div class="panel"&gt;
+            <br>  &lt;p&gt;Indhold&lt;/p&gt;
+            <br>  &lt;/div&gt;
+            <br>  &lt;button class="accordion"&gt;
+            <br>  Menupunkt
+            <br>  &lt;div class="arrow"&gt;&lt;/div&gt;
+            <br>  &lt;/button&gt;
+            <br>  &lt;div class="panel"&gt;
+            <br>  &lt;p&gt;Indhold&lt;/p&gt;
+            <br>  &lt;/div&gt;
+            <br>  &lt;/div&gt;
+            <br><br>
 
 
             <h3>CSS</h3>
             .accordion_container {
-              grid-area: accordion;
-              background-color: green;
-              width: 45%;
-            }
-            .accordion {
-              background-color: #5cb71d;
-              color: #fff;
-              cursor: pointer;
-              padding: 26px;
-              width: 100%;
-              border: none;
-              text-align: left;
-              outline: none;
-              font-size: 18px;
-              transition: 0.4s;
-              font-family: roboto-condensed, sans-serif;
-              font-weight: 400;
-              font-style: normal;
-              border-bottom: 1px solid #fff;
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              align-items: center;
-            }
+            <br>  grid-area: accordion;
+            <br>  background-color: green;
+            <br>  width: 45%;
+            <br>  }
+            <br>  .accordion {
+            <br>  background-color: #5cb71d;
+            <br>  color: #fff;
+            <br>  cursor: pointer;
+            <br>  padding: 26px;
+            <br>  width: 100%;
+            <br>  border: none;
+            <br>  text-align: left;
+            <br>  outline: none;
+            <br>  font-size: 18px;
+            <br>  transition: 0.4s;
+            <br>  font-family: roboto-condensed, sans-serif;
+            <br>  font-weight: 400;
+            <br>  font-style: normal;
+            <br>  border-bottom: 1px solid #fff;
+            <br>  display: flex;
+            <br>  flex-direction: row;
+            <br>  justify-content: space-between;
+            <br>  align-items: center;
+            <br>}
 
-            .active,
-            .accordion:hover {
-              background-color: #5cb71d;
-            }
+            <br>.active,
+            <br>.accordion:hover {
+            <br>  background-color: #5cb71d;
+            <br>}
 
-            .panel {
-              padding: 0 18px;
-              background-color: white;
-              max-height: 0;
-              overflow: hidden;
-              height: 100%;
-              transition: max-height 0.2s ease-out;
-            }
-            .arrow {
-              border: solid #fff;
-              border-width: 0 2px 2px 0;
-              display: inline-block;
-              padding: 5px;
-              transform: rotate(45deg);
-            }
+            <br>.panel {
+            <br>  padding: 0 18px;
+            <br>  background-color: white;
+            <br>  max-height: 0;
+            <br>  overflow: hidden;
+            <br>  height: 100%;
+            <br>  transition: max-height 0.2s ease-out;
+            <br>}
+            <br>.arrow {
+            <br>  border: solid #fff;
+            <br>  border-width: 0 2px 2px 0;
+            <br>  display: inline-block;
+            <br>  padding: 5px;
+            <br>  transform: rotate(45deg);
+            <br>}
+            <br><br>
 
+            <h3>JavaScript</h3>
 
-            <h3>JS</h3>
-
-
-            let acc = document.getElementsByClassName("accordion");
-            let i;
-
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                let panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-              });
-
-            }
+                let acc = document.getElementsByClassName("accordion");
+            <br>let i;
+            <br>
+            <br>for (i = 0; i < acc.length; i++) {
+            <br>  acc[i].addEventListener("click", function() {
+            <br>    this.classList.toggle("active");
+            <br>    let panel = this.nextElementSibling;
+            <br>    if (panel.style.maxHeight) {
+            <br>      panel.style.maxHeight = null;
+            <br>    } else {
+            <br>      panel.style.maxHeight = panel.scrollHeight + "px";
+            <br>    }
+            <br>  });
+            <br>
+            <br>}
 
 
     </div>
       </div>
 
-<h2>Hamburger menu</h2>
+<h3>Hamburger-menu</h3>
 <div class="section">
     <div class="indhold">
 
@@ -531,7 +538,206 @@
 
           </div>
     </div>
+
     <div class="kodeboks">
+      <h3>HTML</h3>
+
+      &lt;div class="header"&gt;
+        <br>  &lt;img src="img/NORQI-Logo.svg" alt=""&gt;
+        <br>  &lt;nav&gt;
+        <br>    &lt;div class="sprog"&gt;
+        <br>      &lt;a href="#">Dansk&lt;/a&gt;
+        <br>      &lt;a href="#">English&lt;/a&gt;
+        <br>
+        <br>    &lt;/div&gt;
+        <br>    &lt;div class="dropdown"&gt;
+        <br>      &lt;button class="dropbtn" onclick="myFunction()"&gt;Produkter
+        <br>        &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;
+        <br>      &lt;/button&gt;
+        <br>      &lt;div class="dropdown-content" id="myDropdown"&gt;
+        <br>        &lt;a href="#">Kipgryder&lt;/a&gt;
+        <br>        &lt;a href="#">Kipstegere&lt;/a&gt;
+        <br>        &lt;a href="#">Kogeborde&lt;/a&gt;
+        <br>      &lt;/div&gt;
+        <br>      &lt;a href="#">God viden&lt;/a&gt;
+        <br>      &lt;a href="#">Om NORQi&lt;/a&gt;
+        <br>      &lt;a href="#">Kontakt&lt;/a&gt;
+        <br>    &lt;/div&gt;
+        <br>    &lt;/nav&gt;
+        <br>    &lt;button class="hamburger"&gt;
+        <br>      &lt;div class="bar"&gt;&lt;/div&gt;
+        <br>    &lt;/button&gt;
+        <br>
+        <br>  &lt;/div>
+
+      <h3>CSS</h3>
+
+      .header {
+    <br>    background-color: #313331;
+    <br>    width: 45vw;
+    <br>    z-index: 3;
+    <br>    display: flex;
+    <br>    justify-content: space-between;
+    <br>    align-items: center;
+    <br>    height: 10vh;
+    <br>  }
+    <br>  .header img {
+    <br>    display: block;
+    <br>    max-height: 10vh;
+    <br>    margin: 1%;
+    <br>    padding: 2px;
+    <br>  }
+    <br>  nav {
+    <br>    position: fixed;
+    <br>    top: 0;
+    <br>    left: 100%;
+    <br>    width: 100%;
+    <br>    min-height: 100vh;
+    <br>    display: block;
+    <br>    z-index: 98;
+    <br>    background-color: #313331;
+    <br>    padding-top: 12px;
+    <br>    transition: 0.4s;
+    <br>  }
+    <br>  nav.is-active {
+    <br>    left: 0;
+    <br>  }
+    <br>  nav a {
+    <br>    display: block;
+    <br>    margin: 0 0px 16px;
+    <br>    text-align: left;
+    <br>    padding: 12px 16px;
+    <br>    background-color: #313331;
+    <br>    text-decoration: none;
+    <br>    list-style: none;
+    <br>    color: #fff;
+    <br>    font-size: 20px;
+    <br>    font-family: roboto-condensed, sans-serif;
+    <br>    font-weight: 600;
+    <br>    font-style: normal;
+    <br>  }
+    <br>  .sprog {
+    <br>    display: flex;
+    <br>    margin-bottom: 5%;
+    <br>    margin-top: 2%;
+    <br>  }
+    <br>  .sprog a:hover {
+    <br>    color: #5cb71d;
+    <br>    background-color: #313331;
+    <br>    width: auto;
+    <br>  }
+    <br>  nav a:hover {
+    <br>    background-color: #2b2b2b;
+    <br>    width: 100vw;
+    <br>  }
+    <br>  .hamburger {
+    <br>    position: relative;
+    <br>    width: 42px;
+    <br>    margin-right: 30px;
+    <br>    cursor: pointer;
+    <br>    height: 42px;
+    <br>    appearance: none;
+    <br>    background: none;
+    <br>    outline: none;
+    <br>    border: none;
+    <br>    z-index: 99;
+    <br>  }
+    <br>  .hamburger .bar,
+      .hamburger:after,
+      .hamburger:before {
+    <br>    content: "";
+    <br>    display: block;
+    <br>    width: 100%;
+    <br>    height: 5px;
+    <br>    background-color: #fff;
+    <br>    margin: 6px 0px;
+    <br>    transition: 0.4s;
+    <br>  }
+    <br>  .hamburger.is-active:before {
+    <br>    transform: rotate(-45deg) translate(-17px, 2px);
+    <br>  }
+    <br>  .hamburger.is-active:after {
+    <br>    transform: rotate(45deg) translate(-14px, 2px);
+    <br>  }
+    <br>  .hamburger.is-active .bar {
+    <br>    opacity: 0;
+    <br>  }
+    <br>  .dropdown {
+    <br>    float: left;
+    <br>    overflow: hidden;
+    <br>  }
+    <br>  .dropdown .dropbtn:hover {
+    <br>    background-color: #2b2b2b;
+    <br>    width: 100vw;
+    <br>  }
+    <br>  .dropdown .dropbtn {
+    <br>    cursor: pointer;
+    <br>    border: none;
+    <br>    outline: none;
+    <br>    background-color: #313331;
+    <br>
+    <br>    margin: 0 0px 16px;
+    <br>    text-align: left;
+    <br>    padding: 12px 16px;
+    <br>    text-decoration: none;
+    <br>    list-style: none;
+    <br>    color: #fff;
+    <br>    font-size: 20px;
+    <br>    font-family: roboto-condensed, sans-serif;
+    <br>    font-weight: 600;
+    <br>    font-style: normal;
+    <br>  }
+    <br>  .dropdown-content {
+    <br>    display: none;
+    <br>    position: relative;
+    <br>    background-color: #2b2b2b;
+    <br>    z-index: 1;
+    <br>  }
+    <br>  .dropdown-content a {
+    <br>    float: none;
+    <br>    color: #fff;
+    <br>    padding: 12px 16px;
+    <br>    margin-top: 20px;
+    <br>    text-decoration: none;
+    <br>    display: block;
+    <br>    text-align: left;
+    <br>    background-color: #2b2b2b;
+    <br>    width: 100vw;
+    <br>    font-family: roboto-condensed, sans-serif;
+    <br>    font-weight: 200;
+    <br>    font-style: normal;
+    <br>  }
+    <br>  .dropbtn i {
+    <br>  }
+    <br>  .show {
+    <br>    display: block;
+    <br>  }
+    <br>
+
+      <h3>JavaScript</h3>
+
+          const menu_btn = document.querySelector('.hamburger');
+    <br>  const mobile_menu = document.querySelector('nav');
+    <br>
+    <br>  menu_btn.addEventListener('click', function () {
+    <br>    menu_btn.classList.toggle('is-active');
+    <br>    mobile_menu.classList.toggle('is-active');
+    <br>
+    <br>  });
+    <br>
+    <br>  function myFunction() {
+    <br>    document.getElementById("myDropdown").classList.toggle("show");
+    <br>  }
+    <br>
+    <br>  window.onclick = function(e) {
+    <br>    if (!e.target.matches('.dropbtn')) {
+    <br>    let  myDropdown = document.getElementById("myDropdown");
+    <br>      if (myDropdown.classList.contains('show')) {
+    <br>        myDropdown.classList.remove('show');
+    <br>      }
+    <br>    }
+    <br>  }
+    <br>
 
     </div>
 </div>
