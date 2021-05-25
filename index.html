@@ -413,14 +413,7 @@
 
         </div>
 
-        <h2>Layout</h2>
-        <h3>Vi har taget udgangspunkt i en iPhone X-størrelse. <br>Derfor er dimensionerne for skærmen 375px*812px.</h3>
-    <div class="section">
-      <div class="indhold">
-        <img src="img/layout.png" style="border: solid 1px #000;" alt="">
-        <img src="img/layout2.png" style="border: solid 1px #000;" alt="">
-      </div>
-    </div>
+
 
     <h2>Menuer</h2>
     <h3>Accordion-menu</h3>
@@ -428,49 +421,49 @@
       <div class="indhold">
         <div class="accordion_container">
           <button class="accordion">
-            Menupunkt
+            VARMESTYRING
             <div class="arrow"></div>
           </button>
           <div class="panel">
             <p>Indhold</p>
           </div>
           <button class="accordion">
-            Menupunkt
+            OMRØRER
             <div class="arrow"></div>
           </button>
           <div class="panel">
               <p>Indhold</p>
           </div>
           <button class="accordion">
-            Menupunkt
+            VANDPÅFYLDNING
             <div class="arrow"></div>
           </button>
           <div class="panel">
               <p>Indhold</p>
           </div>
           <button class="accordion">
-            Menupunkt
+            TIDSFUNKTIONER
             <div class="arrow"></div>
           </button>
           <div class="panel">
             <p>Indhold</p>
           </div>
           <button class="accordion">
-            Menupunkt
+            MENU OG KLOKKEN
             <div class="arrow"></div>
           </button>
           <div class="panel">
             <p>Indhold</p>
           </div>
           <button class="accordion">
-            Menupunkt
+            KIPFUNKTIONER
             <div class="arrow"></div>
           </button>
           <div class="panel">
             <p>Indhold</p>
           </div>
           <button class="accordion">
-            Menupunkt
+            SUPPORT
             <div class="arrow"></div>
           </button>
           <div class="panel">
@@ -816,7 +809,7 @@
 </div>
 
 <h2>Billeder</h2>
-<h3>Kipgryde</h3>
+<h3>Induktionskipgryde</h3>
 
 <div class="section">
   <div class="indhold">
@@ -829,6 +822,13 @@
 
     <div class="kodeboks">
       <h3>HTML:</h3>
+      &lt;img src="img/kipgryde.jpg" alt=""&gt;
+      <br><br>
+      <h3>CSS:</h3>
+      .introduction_container img {
+    <br>    width: 50vw;
+    <br>    height: auto;
+    <br>    }
     </div>
 
 </div>
@@ -841,8 +841,29 @@
     </div>
 
     <div class="kodeboks">
-      <h3>HTML:</h3>
+      <h3>CSS:</h3>
+      .footer {
+<br>  grid-area: footer;
+<br>  background: url(img/footer-bg-repeat.jpg) repeat center center fixed;
+<br>  z-index: 80;
+<br>  position: inherit;
+<br>  display: flex;
+<br>  flex-direction: column;
+<br>  align-items: center;
+<br>  padding-top: 50px;
+<br>  }
+
+
     </div>
+</div>
+
+<h2>Layout</h2>
+<h3>Vi har taget udgangspunkt i en iPhone X-størrelse. <br>Derfor er dimensionerne for skærmen 375px*812px.</h3>
+<div class="section">
+<div class="indhold">
+<img src="img/layout.png" style="border: solid 1px #000;" alt="">
+<img src="img/layout2.png" style="border: solid 1px #000;" alt="">
+</div>
 </div>
 
 </body>
